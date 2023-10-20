@@ -1,0 +1,252 @@
+.contenedorGeneral{display: grid;
+  grid-template: auto auto auto auto auto auto/ 33% auto 33%;
+  grid-template-areas: "header header header"
+                       "quienes quienes quienes"
+                       "izquierda centro derecha"
+                       "footer footer footer"
+  
+  
+  ;
+}
+
+.header{grid-area: header;}
+.nosotros{grid-area: quienes;}
+.habitaciones{grid-area: izquierda;}
+.actividades{grid-area: centro;}
+.galeria{grid-area: derecha;}
+.footerGeneral{grid-area: footer;}
+
+@media (max-width: 1024px) {
+  .contenedorGeneral {
+      display: grid;
+      grid-template: auto auto auto auto auto auto/ 33% auto;
+      grid-template-areas: "header header"
+                       "quienes quienes"
+                       "izquierda centro" 
+                       "derecha derecha"
+                       "footer footer"
+  
+  }
+}
+
+/*--------------------------------------------------*/
+/* Defino estilos del contenedor para telefono
+/*--------------------------------------------------*/
+@media (max-width: 620px) {
+  .contenedorGeneral {
+      display: grid;
+      grid-template: auto auto auto auto auto auto/ auto;
+  grid-template-areas: "header"
+                       "quienes"
+                       "izquierda" 
+                       "centro" 
+                       "derecha"
+                       "footer"
+  
+  }
+}
+
+a {text-decoration: none;}
+.header {
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;   
+    background-color: #2F2516;
+
+}
+
+.contenedorLogo img {
+
+    width: 100px; 
+    border: 3px solid #2F2516;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: auto;
+
+}
+
+nav ul li:hover {
+    background-color: grey;
+    
+}
+nav ul li a{
+    color: #DED1BF;
+    padding: 20px;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color: #242323;
+    background-color:#DBC493;
+    transform: scale(5.5);
+  
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    text-decoration: none;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+
+}
+
+.barra {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mendoza {
+  height: 500px;
+  overflow-y: hidden;
+  margin: 10px;
+  position: relative;
+  
+}
+
+.quienesSomos img{
+  width: ;
+}
+.quienesSomos{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+  .contenedorLogoFooter img {
+    width: 100px;
+
+  }
+
+  .footerGeneral{
+    display: flex;
+    background: #242323;
+    padding: 20px 100px ;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+.footerMenu{
+    margin: 20px 0 12px;
+    padding: 0;
+  }
+
+.footerMenu a{
+    text-decoration: none;
+    color:  #DED1BF;
+  }
+
+.footerMenu a:before {
+    content: "|";
+    font-size: 20px;
+    padding-right: 5px;
+  }
+  
+  .informacion {
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  .informacion i{
+    display: flex;
+    color: white;
+    font-size: 25px;
+  }
+
+  .informacion p{
+    display: flex;
+    color: #DED1BF;
+    
+  }
+  .direccion{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+   
+  }
+
+  .telefono{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+  .telefono p {
+
+    text-align: center;
+  }
+
+  .email{
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+
+.informacion p a{
+    color: #DBC493;
+    text-decoration: none;
+  }
+  
+  
+.derechos{
+    width: 20%;
+  }
+  
+.copyright{
+  display: flex;
+  justify-content: flex-end;
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  
+.socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .socialMedia a{
+    width: 35px; 
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-top: 10px;
+    }

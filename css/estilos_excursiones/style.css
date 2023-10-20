@@ -1,0 +1,78 @@
+.header {
+    background-color: #DBC493;
+    border:1px solid #DBC493;
+    border-radius: 10px;
+}
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+p {
+    color:#2F2516;
+    font-size: 18px;
+}
+
+h1 {
+    color:#2F2516;
+    background-color:#71471F;
+    font-size: 20px;
+    ;
+}
+.servicios img {
+    height: 250px;
+    width: 430px;
+    
+}
+ a:link {
+    color: #242323
+}
+
+a:hover{
+    background-color: #2F2516;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #DBC493;
+}
+.icono {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}    
+
+body {
+    background-color:#DBC493 ;
+
+}
+
+nav {
+    border-radius: 2px;
+    padding: 10px;
+    margin: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin:0px;
+}
+
+ul li {
+    display: inline-block;
+    ;
+  
+}
+
+li a {
+    color:antiquewhite;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    transform: scale(1.1);
+   
+}
+
+img {
+    padding: 20px
+
+}
+

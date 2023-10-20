@@ -1,0 +1,95 @@
+.contenedor {
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#DBC493 ;
+    color:#2F2516;
+    margin: 0px;
+    padding: 0px;
+}
+
+.encabezado h1 {
+    font-size: 30pt;
+    color: #71471F
+}
+
+.encabezado img {
+    width: 200px;
+    margin: 0px 15px;
+}
+
+.logo img {
+    width:90px;
+    margin: 0px 15px;
+}
+
+/*-------------------------------------------*/
+/* Estilos del menu */
+
+.menu{
+    background-color:#71471F ;
+    color: #DBC493;
+    text-align: right;
+}
+.menu ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0px;
+}
+
+.menu ul li {
+    display: inline-block;
+}
+
+.menu li a {
+    color: #DBC493;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
+.menu li a:hover {
+    background-color: #2F2516;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #DBC493;
+    animation: 0.5s infinite boton-menu;
+}
+
+/* nofunciona
+@keyframes boton-menu {
+    0% { transform: scaleX(1.0);}
+    50% { transform: scaleX(1.15);}
+    100% { transform: scaleX(1.0);}
+} */
+
+/*-------------------------------------------*/
+/* Estilos de las habitaciones */
+
+.contenedor-hab {
+    display: flex;
+    padding: 10px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.contenedor-hab div {
+    margin: 10px;
+}
+.contenedor-hab img {
+    height: 250px
+}
+.contenedor-hab li {
+    list-style: none;
+}
+.contenedor-hab li a {
+    color: #2F2516;
+    padding: 10px;
+    text-decoration: none;
+
+}
+
