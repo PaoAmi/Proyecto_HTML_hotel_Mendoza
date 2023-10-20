@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios Mendoza hotel de Montaña</title>
     <link rel="stylesheet" href="css/estilosservicios.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,300;1,500&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8efb435a74.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,9 +37,21 @@
 
 
         <main class="encabezado-centro">
-            <div>
-                <h2> Servicios</h2>
-
+            <div class="info_serv">
+                 <h2> Nuestros Servicios</h2>
+                <div class="api" align="right">
+                    <script>
+                        let meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                        let f = new Date();
+                        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+                    </script>
+                </div>
+                <p><i>La atención personalizada y los detalles de primera calidad harán que vivas una experiencia
+                        inigualable. <br>
+                        A tu disposición se encontrarán todos estos servicios para que sientas la comodidad de estar en
+                        casa, manteniendo el equilibrio perfecto entre un viaje de negocios y un buen descanso.
+                        <br>Relájate, nuestro staff te ayudará en todo momento para que alojarte en nuestro hotel
+                        siempre sea el mejor plan.</i></p>
             </div>
 
             <div class="servicios">

@@ -7,163 +7,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/Users/Borro/Downloads/compilado2-20231019T152058Z-001/compilado2/css/estilos_index/">
-
-
+    <link rel="stylesheet" href="./css/estilos_index/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8efb435a74.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="contenedor">
-    <header class="encabezado">
-        <div class="logo">
-        <img src="imagenes/logo.png" alt="logo" >
-        </div>
-        <div class="encabezado-centroI">
-            <h1>Conoce nuestro hotel</h1>
-
-        </div>
-        <div class="encabezado-centro">
-            <img src="imagenes/servicio-campana-mesa-restaurante_23-2148040200.jpg">
-        </div>
-        <div class="encabezado-centro">
-            <img src="imagenes/cama-doble-vista-arriba_1203-344.avif">
-        </div>
-        <div class="encabezado-centro">
-            <img src="imagenes/suite-dormitorio-moderno-clasico-lujo-hotel_105762-1787.avif">
-        </div>
-
-    </header>
-    <nav class="menu">
-        <div class="barra">
-            <nav>
-                <ul class="lista">
-                    <li><a href="indexPaola.html">Home</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="formulario.html">Contacto</a></li>
-                </ul>
-
-        </div>
-    </nav>
-
-    <article class="articulo1">
-        <div class="contenedor-hab">
-                        
-            <div> 
-                <img src="imagenes/almohada-cama_74190-3655.avif" alt="Habitaciones">
+        <header class="encabezado">
+            <div class="logo">
+                <img src="imagenes/logo.png" alt="logo">
             </div>
-            <div>
-                <li><a href="habitaciones.html"><h3>Habitaciones</h3></a></li>
-                <p>Nuestro hotel cuenta con diferentes tipos de habitaciones para que su estadia sea perfecta.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum suscipit quod, minus libero commodi nihil ea fugit autem est culpa, recusandae veniam consequuntur esse possimus voluptate dolorem iure totam.</p>
+            <div class="encabezado-centroI">
+                <h1>Hotel de Alta Montaña</h1>
+
+            </div>
+            <div class="encabezado-centro">
+                <img src="imagenes/servicio-campana-mesa-restaurante_23-2148040200.jpg" width="200" height="120">
+            </div>
+            <div class="encabezado-centro">
+                <img src="imagenes/cama-doble-vista-arriba_1203-344.avif" width="200" height="120">
+            </div>
+            <div class="encabezado-centro">
+                <img src="imagenes/suite-dormitorio-moderno-clasico-lujo-hotel_105762-1787.avif" width="200"
+                    height="120">
             </div>
 
-        </div>
+        </header>
+        <nav class="menu">
+            <div class="barra">
+                <nav>
+                    <ul class="lista">
+                        <li><a href="indexPaola.html">Home</a></li>
+                        <li><a href="habitaciones.html">Habitaciones</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="formulario.html">Contacto</a></li>
+                    </ul>
 
-    </article>
-
-    <article class="articulo2">
-
-    <div class="contenedor-hab">
-                        
-        <div> 
-            <img src="imagenes/mujer-joven-masaje-facial-relajante-salon-spa_176420-7546.avif" alt="Habitaciones">
-        </div>
-        <div>
-            <li><a href="servicios.html"><h3>Servicios</h3></a></li>
-            <p>Ofrecemos todos los servicios para garantizar su descanso.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum suscipit quod, minus libero commodi nihil ea fugit autem est culpa, recusandae veniam consequuntur esse possimus voluptate dolorem iure totam.</p>
-        </div>
-
-    </div>>
-    </article>
-
-    <article class="articulo3">
-        <div class="contenedor-hab">
-                        
-            <div> 
-                <img src="imagenes/jerry-zhang-ePpaQC2c1xA-unsplash.jpg">
             </div>
-            <div>
-                <li><a href="excursiones.html"><h3>Excursiones</h3></a></li>
-                <p>Contamos con los mejores guias de turismo para que no te pierdas ninguna de las experiencias disponibles en Mendoza. </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptatum suscipit quod, minus libero commodi nihil ea fugit autem est culpa, recusandae veniam consequuntur esse possimus voluptate dolorem iure totam.</p>
+        </nav>
+
+
+
+
+        <main class="encabezado-ppal">
+            <div class="info_serv">
+                <h2> Conoce nuestro hotel</h2>
+                <!-- fecha -->
+                <div class="api" align="right">
+                    <script>
+                        let meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                        let f = new Date();
+                        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+                    </script>
+                </div>
+
+
+
+
+                <article class="articulo1">
+                    <div class="contenedor-hab">
+
+                        <div>
+                            <img src="imagenes/almohada-cama_74190-3655.avif" alt="Habitaciones">
+                        </div>
+                        <div>
+                            <li><a href="habitaciones.html">
+                                    <h3>Habitaciones</h3>
+                                </a></li>
+                            <p>Nuestro hotel cuenta con diferentes tipos de habitaciones para que su estadia sea
+                                perfecta.</p>
+                            <p>Las habitaciones disponen de aire acondicionado y minibar. Todas tienen vistas a las
+                                torres históricas de la ciudad, al cerro de la Gloria y al valle circundante.</p>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="articulo2">
+
+                    <div class="contenedor-hab">
+
+                        <div>
+                            <img src="imagenes/mujer-joven-masaje-facial-relajante-salon-spa_176420-7546.avif"
+                                alt="Habitaciones">
+                        </div>
+                        <div>
+                            <li><a href="servicios.html">
+                                    <h3>Servicios</h3>
+                                </a></li>
+                            <p>Ofrecemos todos los servicios para garantizar su descanso.</p>
+                            <p>Cuenta con bodega y un piano bar donde se sirven cócteles. El gimnasio tiene equipamiento
+                                de última generación y bar con bebidas energéticas. También hay baño turco y bañera de
+                                hidromasaje. Se ofrece un servicio de masajes a pedido. Hay estacionamiento gratuito.
+                            </p>
+                        </div>
+
+                    </div>>
+                </article>
+
+                <article class="articulo3">
+                    <div class="contenedor-hab">
+
+                        <div>
+                            <img src="imagenes/jerry-zhang-ePpaQC2c1xA-unsplash.jpg">
+                        </div>
+                        <div>
+                            <li><a href="excursiones.html">
+                                    <h3>Excursiones</h3>
+                                </a></li>
+                            <p>Contamos con los mejores guias de turismo para que no te pierdas ninguna de las
+                                experiencias disponibles en Mendoza. </p>
+                            <p>Enclavado en la Cordillera de Los Andes, inundando de belleza y sensaciones el entorno,
+                                el Parque de Agua Termal y Aventura Termas Cacheuta cautiva desde la primera impresión
+                                y, entonces, ya no hay retorno. Placer supremo, relax y distensión parecieran ser sus
+                                palabras mágicas, no obstante también la diversión y la adrenalina encuentran su espacio
+                                en este oasis situado en la provincia de Mendoza.</p>
+                        </div>
+
+                    </div>
+
+                </article>
+        </main>
+
+
+
+        <footer class="footerGeneral">
+
+            <div class="footerLogoLink">
+
+                <div class="contenedorLogoFooter">
+                    <a href="Index.html"><img src="imagenes/logo.png" alt=""> </a>
+                </div>
+
+                <p class="footerMenu">
+                    <a href="indexPaola.html">Home</a>
+
+                    <a href="habitaciones.html">Habitaciones</a>
+
+                    <a href="servicios.html">Servicios</a>
+
+                    <a href="formulario.html">Contacto</a>
+
+                </p>
+
+
             </div>
 
-        </div>
+            <div class="informacion">
 
-    </article>
-    <aside class="aside">
+                <div class="direccion">
+                    <i class="fa fa-map-marker"></i>
+                    <p>Av. Champagnat 32<br> Mendoza.</p>
+                </div>
 
-    </aside>
+                <div class="telefono">
+                    <i class="fa fa-phone"></i>
+                    <p>0261-541-8139</p>
+                </div>
 
-    
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@hotelam.com">info@hotelam.com</a></p>
+                </div>
 
-        
-    
-    
-    
+            </div>
+
+            <div class="derechos">
+
+                <p class="copyright">
+                    &copy; 2023 comisión 23511 Codo a Codo <br>Hotel de Alta Montaña Mendoza.
+
+                </p>
+
+                <div class="socialMedia">
+
+                    <a href="https://www.facebook.com/"><span class="fab fa-facebook"></span></a>
+                    <a href="https://twitter.com/?lang=es"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
+
+                </div>
+
+            </div>
+
+        </footer>
 </body>
-
-<footer class="footerGeneral">
-
-    <div class="footerLogoLink">
-
-        <div class="contenedorLogoFooter">
-            <a href="Index.html"><img src="imagenes/logo.png" alt=""> </a>
-        </div>
-
-        <p class="footerMenu">
-            <a href="indexPaola.html">Home</a>
-
-            <a href="habitaciones.html">Habitaciones</a>
-
-            <a href="servicios.html">Servicios</a>
-
-            <a href="formulario.html">Contacto</a>
-
-        </p>
-
-
-    </div>
-
-    <div class="informacion">
-
-        <div class="direccion">
-            <i class="fa fa-map-marker"></i>
-            <p>Av. Champagnat 32<br> Mendoza.</p>
-        </div>
-
-        <div class="telefono">
-            <i class="fa fa-phone"></i>
-            <p>0261-541-8139</p>
-        </div>
-
-        <div class="email">
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:info@hotelam.com">info@hotelam.com</a></p>
-        </div>
-
-    </div>
-
-    <div class="derechos">
-
-        <p class="copyright">
-            &copy; 2023 comisión 23511 Codo a Codo <br>Hotel de Alta Montaña Mendoza.
-
-        </p>
-
-        <div class="socialMedia">
-
-            <a href="https://www.facebook.com/"><span class="fab fa-facebook"></span></a>
-            <a href="https://twitter.com/?lang=es"><span class="fab fa-twitter"></span></a>
-            <a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
-
-        </div>
-
-    </div>
-
-</footer>
-
 
 </html>

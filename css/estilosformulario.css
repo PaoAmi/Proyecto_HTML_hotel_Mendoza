@@ -30,13 +30,15 @@ body {
 .encabezado-centro h2 {
     display: flex;
     font-size: 20px;
-    height: 60px;
-    border: 1px solid #A88C6F;
+    height: 70px;
+    border: 1px solid #B69E83;
     margin: 0;
     justify-content: center;
-    align-items: center;
-    color: #242323;
-    background-color: #A88C6F;
+    align-items: end;
+    background-color: #B69E83;
+    font-family: 'EB Garamond', serif;  
+    color: #33383b;
+    padding-bottom: 10px;
 }
 
 .encabezado-centro p {
@@ -46,30 +48,32 @@ body {
 }
 
 /* menu */
-
 .menu {
     background-color: #33383b;
     display: flex;
     height: 60px;
-
+    
 }
 
 nav ul li {
     display: inline-block;
     padding: auto;
-
+    font-family: 'EB Garamond', serif;
+    
 }
 
 nav ul li:hover {
     background-color: grey;
-
+    
 }
 
 nav ul li a {
     color: #DED1BF;
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
+   
+   
 }
 
 nav ul li a:hover {
@@ -103,28 +107,48 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
+
+/* info principal */
+
+.info_serv p {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+}
+
+.info_serv .api {
+    margin: 15px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+
+
+/* formulario */
 
 .formulario h3 {
     text-align: center;
     margin: 10px 0;
     margin-bottom: 20px;
-
+    font-family: 'EB Garamond', serif;
 }
 
 
 .formulario {
     box-sizing: border-box;
-
     background-color: #DED1BF;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
+    margin: 10px;
     width: 90%;
     height: 100%;
-
-
-
+   
+    
 }
 
 .formulario .form_general .form_label {
@@ -132,6 +156,7 @@ nav ul {
     padding: 10px;
     width: 30%;
     object-fit: cover;
+    font-family: 'EB Garamond', serif;
 }
 
 .finput:focus {
@@ -162,6 +187,7 @@ nav ul {
     margin: 10px 10px 10px;
     padding: 0;
     align-items: center;
+    
 
 }
 
@@ -171,6 +197,7 @@ nav ul {
     height: 30px;
     border-radius: 3px solid #DED1BF;
     justify-content: center;
+    font-family: 'EB Garamond', serif;
 
 }
 
@@ -179,7 +206,8 @@ nav ul {
     display: flex;
     padding: 10px;
     justify-content: space-around;
-    margin: 15px 15px 15px 15px;
+    margin: 15px 15px 50px 15px;
+    
 
 }
 
@@ -194,9 +222,9 @@ nav ul {
     display: flex;
     margin: 10px;
     padding: 0 10px;
-    font-size: 18px;
+    font-size: 16px;
     align-items: baseline;
-
+    font-family: 'EB Garamond', serif;
 
 }
 
@@ -236,6 +264,7 @@ h3 {
 .footerMenu a {
     text-decoration: none;
     color: #DED1BF;
+    font-family: 'EB Garamond', serif;
 }
 
 .footerMenu a:before {
@@ -260,7 +289,7 @@ h3 {
     display: flex;
     color: #DED1BF;
     padding: 5px 5px 5px;
-
+    font-family: 'EB Garamond', serif;
 
 }
 
@@ -315,6 +344,7 @@ h3 {
     font-size: 13px;
     margin: 0;
     padding: 5px;
+    font-family: 'EB Garamond', serif;
 }
 
 

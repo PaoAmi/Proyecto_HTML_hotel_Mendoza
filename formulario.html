@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto Mendoza hotel de Montaña</title>
     <link rel="stylesheet" href="css/estilosformulario.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,300;1,500&display=swap"
-        rel="stylesheet">
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8efb435a74.js" crossorigin="anonymous"></script>
 </head>
 
@@ -37,15 +38,25 @@
 
         <main>
             <div class="encabezado-centro">
-                <h2> Contacto</h2><br><br>
-                <p>¿Pensando en visitar Mendoza? Consulte por ofertas o promociones vigentes.</p>
-            </div>
+                <div class="info_serv">
+                    <h2>Contáctanos</h2>
+                <!-- fecha -->
+                <div class="api" align="right">
+                    <script >
+                        let meses = new Array ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
+                        let f = new Date();
+                        document.write(f.getDate() + " de " + meses[f.getMonth()] + " de " + f.getFullYear());
+                    </script>
+                </div>
+                <p><i>Aquí están todos nuestros datos para que nos contactes ante cualquier consulta o para recibir todas las promociones y nuestra mejor tarifa disponible.
+                    <br>Si tienes una solicitud especial envíanosla para que podamos preverla antes de tu llegada.</i></p>           
+                </div>
+            
 
             <section class="sec">
 
                 <div>
-                    <form action="https://formsubmit.co/2f2087a142231f46d4423e4c03baac46" class="formulario"
-                        id="formulario" name="formulario" method="post">
+                    <form action="https://formsubmit.co/2f2087a142231f46d4423e4c03baac46" class="formulario" id="formulario" name="formulario" method="post">
                         <h3>Consultas y Reservas</h3>
                         <!--nombre-->
                         <div class="form_general" id="form_nombre">
@@ -106,7 +117,6 @@
                                 <option value="individual">Individual </option>></option>
                                 <option value="doble">Doble</option>></option>
                                 <option value="triple">Triple</option>></option>
-                                <option value="cuadruple">Cuadruple</option>></option>
                             </select>
 
                         </div>

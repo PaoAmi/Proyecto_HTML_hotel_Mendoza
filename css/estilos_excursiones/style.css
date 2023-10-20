@@ -26,6 +26,21 @@ body {
     width: 100px;
     margin: 0px 15px;
 }
+
+.encabezado-centro h2 {
+    display: flex;
+    font-size: 20px;
+    height: 70px;
+    border: 1px solid #B69E83;
+    margin: 0;
+    justify-content: center;
+    align-items: end;
+    background-color: #B69E83;
+    font-family: 'EB Garamond', serif;  
+    color: #33383b;
+    padding-bottom: 10px;
+}
+
 /* menu estilos  */
 
 
@@ -39,6 +54,7 @@ body {
 nav ul li {
     display: inline-block;
     padding: auto;
+    font-family: 'EB Garamond', serif;
 
 }
 
@@ -93,38 +109,57 @@ width: 100%;
 
 }
 
+/* principal */
+
+.info_serv p {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+}
+
+.info_serv .api {
+    margin: 15px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
+
 .servicios h2 {
     display: flex;
     font-size: 20px;
-    height: 60px;
-    border: 1px solid #A88C6F;
+    height: 70px;
+    border: 1px solid #B69E83;
     margin: 0;
     justify-content: center;
-    align-items: center;
-    background-color: #A88C6F;
-    
+    align-items: end;
+    background-color: #B69E83;
+    font-family: 'EB Garamond', serif;  
+    color: #33383b;
+    padding-bottom: 10px;
 }
 
-/* ver si va */
 
 
-
-p {
-    color:#2F2516;
-    font-size: 18px;
-  
+.texto h3 {
+    font-family: 'EB Garamond', serif;
+   text-align: center;
 }
 
-h1 {
-    color:#DBC493;
-    background-color:#33383b;
-    font-size: 20px;
-    ;
+.servicios {
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   padding-bottom: 50px;
 }
+
+
 .servicios img {
     height: 250px;
     width: 430px;
     padding: 20px;
+    overflow: hidden;
     
 }
  a:link {
@@ -191,6 +226,7 @@ li a {
 .footerMenu a {
     text-decoration: none;
     color: #DED1BF;
+    font-family: 'EB Garamond', serif;
 }
 
 .footerMenu a:before {

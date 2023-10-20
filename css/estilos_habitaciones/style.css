@@ -1,5 +1,3 @@
-
-
 * {
     margin: 0px;
     padding: 0px;
@@ -38,6 +36,21 @@ body {
     
     }
 
+
+    .encabezado-principal h2 {
+        display: flex;
+        font-size: 20px;
+        height: 70px;
+        border: 1px solid #B69E83;
+        margin: 0;
+        justify-content: center;
+        align-items: end;
+        background-color: #B69E83;
+        font-family: 'EB Garamond', serif;  
+        color: #33383b;
+        padding-bottom: 10px;
+    }    
+
 .encabezado-centro  {
     display: inline-block;
     justify-content: center;
@@ -52,25 +65,28 @@ body {
     background-color: #33383b;
     display: flex;
     height: 60px;
-
+    
 }
 
 nav ul li {
     display: inline-block;
     padding: auto;
-
+    font-family: 'EB Garamond', serif;
+    
 }
 
 nav ul li:hover {
     background-color: grey;
-
+    
 }
 
 nav ul li a {
     color: #DED1BF;
     padding: 20px;
-    font-size: 16px;
+    font-size: 18px;
     text-decoration: none;
+   
+   
 }
 
 nav ul li a:hover {
@@ -104,8 +120,33 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+   
 }
 
+.api {
+    display:flex;
+    justify-content: right;
+    text-align:left;
+}
+
+
+/* info principal */
+
+.info_serv p {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 18px;
+    font-family: 'EB Garamond', serif;
+    
+}
+
+.info_serv .api {
+    margin: 15px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+}
 
 /* habitaciones  */
 
@@ -115,23 +156,32 @@ nav ul {
     padding: 10px;
     height: 300px;
     overflow: hidden;
+ 
 }
 
 .contenedor-hab div {
     margin: 10px;
+    
 }
 .contenedor-hab img {
     height: 250px
+    
+    
 }
 .contenedor-hab li {
     list-style: none;
+    font-family: 'EB Garamond', serif;
+    
 }
 .contenedor-hab li a {
     color: #2F2516;
     padding: 10px;
     text-decoration: none;
+    
 
 }
+
+
 
 /* footer  */
 
@@ -159,6 +209,7 @@ nav ul {
 .footerMenu a {
     text-decoration: none;
     color: #DED1BF;
+    font-family: 'EB Garamond', serif;
 }
 
 .footerMenu a:before {
@@ -167,9 +218,13 @@ nav ul {
     padding-right: 5px;
 }
 
+
 .informacion {
     display: flex;
     flex-direction: column;
+    
+
+
 }
 
 .informacion i {
@@ -183,7 +238,7 @@ nav ul {
     display: flex;
     color: #DED1BF;
     padding: 10px 10px 10px;
-
+    font-family: 'EB Garamond', serif;
 
 
 }
@@ -220,6 +275,7 @@ nav ul {
 }
 
 
+
 .informacion p a {
     color: #DBC493;
     text-decoration: none;
@@ -239,6 +295,7 @@ nav ul {
     font-size: 13px;
     margin: 0;
     padding: 5px;
+    font-family: 'EB Garamond', serif;
 }
 
 
