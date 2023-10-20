@@ -20,30 +20,32 @@
                 <!-- logo -->
                 <img src="imagenes/logo.png" alt="logo">
             </div>
-            <div class="barra">
-                <nav>
-                  <ul class="lista">
-                    <li><a href="IndexMartin.html">Home</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="habitaciones.html">Habitaciones</a></li>
-                    <li><a href="#">Contacto</a></li>
-                  </ul>
-                </nav>
-              </div>
+
         </header>
         <nav class="menu">
-            
+            <div class="barra">
+                <nav>
+                    <ul class="lista">
+                        <li><a href="indexPaola.html">Home</a></li>
+                        <li><a href="habitaciones.html">Habitaciones</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="formulario.html">Contacto</a></li>
+                    </ul>
+
+            </div>
         </nav>
+
         <main>
             <div class="encabezado-centro">
-                <h2> CONTACTO</h2><br>
+                <h2> Contacto</h2><br><br>
                 <p>¿Pensando en visitar Mendoza? Consulte por ofertas o promociones vigentes.</p>
             </div>
 
             <section class="sec">
 
                 <div>
-                    <form action="" class="formulario" id="formulario" name="formulario" method="get">
+                    <form action="https://formsubmit.co/2f2087a142231f46d4423e4c03baac46" class="formulario"
+                        id="formulario" name="formulario" method="post">
                         <h3>Consultas y Reservas</h3>
                         <!--nombre-->
                         <div class="form_general" id="form_nombre">
@@ -51,8 +53,6 @@
                             <div class="form_input">
                                 <input name="nombre" type="text" class="finput" id="nombre" maxlength="30"
                                     placeholder="Nombre">
-                                <i class="form_estado fa-solid fa-circle-exclamation"></i>
-                                <p class="form_input_error" id="error">Completa tu nombre</p>
                             </div>
 
                         </div>
@@ -63,8 +63,6 @@
                             <div class="form_input">
                                 <input name="apellido" type="text" class="finput" id="apellido" maxlength="30"
                                     placeholder="Apellido">
-                                <i class="form_estado fa-solid fa-circle-exclamation"></i>
-                                <p class="form_input_error" id="error">Completa tu apellido</p>
                             </div>
                         </div>
 
@@ -73,8 +71,7 @@
                             <label for="correo" class="form_label">Email</label>
                             <div class="form_input">
                                 <input name="correo" type="email" class="finput" id="correo" placeholder="Email">
-                                <i class="form_estado fa-solid fa-circle-exclamation"></i>
-                                <p class="form_input_error" id="error">Completa tu email</p>
+
                             </div>
                             <hr>
 
@@ -86,8 +83,7 @@
                             <div class="form_input">
                                 <input name="telefono" type="number" class="finput" id="telefono" min="10"
                                     placeholder="Teléfono">
-                                <i class="form_estado fa-solid fa-circle-exclamation"></i>
-                                <p class="form_input_error" id="error">Completa tu telefono</p>
+
                             </div>
 
                         </div>
@@ -95,29 +91,24 @@
                         <!--fechas-->
                         <div class="form_general" id="form_fechas">
                             <label class="form_label" for="date"> Ingreso </label>
-                            <input name="date" type="date" id="date" required>
+                            <input name="date" type="date" id="dateIngreso" required>
                             <label class="form_label" for="date"> Egreso </label>
-                            <input name="date" type="date" id="date" required>
+                            <input name="date" type="date" id="dateEgreso" required>
 
                         </div>
-                        <div>
-                            <p class="form_input_error" id="error">Elige las fechas</p>
-                        </div>
+
 
                         <!--habitacion-->
                         <div class="form_general">
                             <label class="form_label" for="select">Habitación</label>
-                            <select style="margin-right: 10%; width:30%;" class="finput" name="select" id="select">
+                            <select style="margin-right:25%; width:40%;" class="finput" name="select" id="select">
                                 <option value="seleccion">Seleccionar </option>></option>
                                 <option value="individual">Individual </option>></option>
                                 <option value="doble">Doble</option>></option>
                                 <option value="triple">Triple</option>></option>
                                 <option value="cuadruple">Cuadruple</option>></option>
                             </select>
-                            <div>
-                                <p style="margin: left 1%;" class="form_input_error" id="error">Selecciona una opción
-                                </p>
-                            </div>
+
                         </div>
 
 
@@ -127,52 +118,106 @@
                             <textarea name="comentario" id="comentario" placeholder="Escribre tu comentario"
                                 maxlength="500" cols="40" rows="7"></textarea>
                         </div>
-                        <div class="form_general" id="form_mensaje">
-                            <p class="form_input_error" id="error"><i class="fa-solid fa-circle-exclamation"></i>Rellena
-                                los campos solicitados</p>
-                        </div>
+
                         <div style="text-align: center; margin-top: 20px;" class="form_bot">
                             <input type="button" id="bot" name="btn" value="Enviar" onclick="validar()">
-                            <p class="formenviado" id="formenviado">El formulario ha sido enviado</p>
+
                         </div>
+                        <input type="hidden" name="_next" value="http://127.0.0.1:5500/formulario.html">
+                        <input type="hidden" name="_captcha" value="false">
                     </form>
                 </div>
                 <div class="datos">
                     <div class="datostexto">
-                    <i class="fa-solid fa-phone"></i>
-                    <h3>Teléfono</h3>
-                    <p>+54 261 423-5115 </p>
-                </div>
-                <div class="datostexto">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <h3>Whatsapp</h3>
-                    <p>+54 261 592 4372</p>
-                </div>
-                <div class="datostexto">
-                    <i class="fa-regular fa-envelope"></i>
-                    <h3>Correo electrónico</h3>
-                    <p>info@hoteldemontaña.com</p>
-                </div>
-                <div class="datostexto">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h3>Ubicación</h3>
-                    <p>Nos encontramos en RP82 Km 39, M5549 Luján de Cuyo, Mendoza.</p>
-                </div>
-                <div class="datostexto">
-                    <div style="margin-top:10px;" class="boxmap"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6691.039620921401!2d-69.12106811092637!3d-33.01643319794055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sRP82%20Km%2039%2C%20M5549%20Luj%C3%A1n%20de%20Cuyo%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1697342867963!5m2!1ses-419!2sar"
-                            width="610" height="350" style="border:10px; border-radius: 5px;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></iframe></div>
-    
-                </div>
-            </div>
-               
-            </section>
-           
-        </main>
-        <footer>
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Teléfono</h3>
+                        <p>261-541-8139</p>
+                    </div>
+                    <div class="datostexto">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <h3>Whatsapp</h3>
+                        <p>261 592 4372</p>
+                    </div>
+                    <div class="datostexto">
+                        <i class="fa-regular fa-envelope"></i>
+                        <h3>Correo electrónico</h3>
+                        <p>info@hotelam.com</p>
+                    </div>
+                    <div class="datostexto">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Ubicación</h3>
+                        <p>Nos encontramos en Av. Champagnat 32, Mendoza.</p>
+                    </div>
+                    <div class="datostexto">
+                        <div style="margin-top:10px;" class="boxmap"><iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4739.666228575981!2d-68.90841795477589!3d-32.85980781496483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e083fa34d6f0d%3A0x8ce2b87fd1f0a0c3!2sAv.%20Champagnat%2C%20Capital%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1697582550523!5m2!1ses-419!2sar"
+                                width="610" height="350" style="border:0; border-radius: 5px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
 
-            <!--agregar footer-->
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer class="footerGeneral">
+
+            <div class="footerLogoLink">
+
+                <div class="contenedorLogoFooter">
+                    <a href="Index.html"><img src="imagenes/logo.png" alt=""> </a>
+                </div>
+
+                <p class="footerMenu">
+                    <a href="indexPaola.html">Home</a>
+
+                    <a href="habitaciones.html">Habitaciones</a>
+
+                    <a href="servicios.html">Servicios</a>
+
+                    <a href="formulario.html">Contacto</a>
+
+                </p>
+
+
+            </div>
+
+            <div class="informacion">
+
+                <div class="direccion">
+                    <i class="fa fa-map-marker"></i>
+                    <p>Av. Champagnat 32<br> Mendoza.</p>
+                </div>
+
+                <div class="telefono">
+                    <i class="fa fa-phone"></i>
+                    <p>0261-541-8139</p>
+                </div>
+
+                <div class="email">
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:info@hotelam.com">info@hotelam.com</a></p>
+                </div>
+
+            </div>
+
+            <div class="derechos">
+
+                <p class="copyright">
+                    &copy; 2023 comisión 23511 Codo a Codo <br>Hotel de Alta Montaña Mendoza.
+
+                </p>
+
+                <div class="socialMedia">
+
+                    <a href="https://www.facebook.com/"><span class="fab fa-facebook"></span></a>
+                    <a href="https://twitter.com/?lang=es"><span class="fab fa-twitter"></span></a>
+                    <a href="https://www.instagram.com/"><span class="fab fa-instagram"></span></a>
+
+                </div>
+
+            </div>
 
         </footer>
 

@@ -1,9 +1,10 @@
+
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-
 
 body {
 
@@ -13,32 +14,23 @@ body {
 
 }
 
-.contenedor {
-    margin: 0px;
-    padding: 0px;
-}
+
 
 .encabezado {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 30px;
     background-color: #33383b;
-    color:#2F2516;
-    margin: 0px;
-    padding: 0px;
+    height: 40px;
 }
 
 .encabezado h1 {
     font-size: 30pt;
     color: #DED1BF;
-
-
 }
 
 .encabezado img {
     width: 200px;
     margin: 0px 15px;
-
 }
 
 .logo img {
@@ -55,12 +47,7 @@ body {
 
 }
 
-
-    
-    /*-------------------------------------------*/
-/* Estilos del menu */
-
-
+/* estilos menu  */
 .menu {
     background-color: #33383b;
     display: flex;
@@ -120,15 +107,8 @@ nav ul {
 }
 
 
-/* nofunciona
-@keyframes boton-menu {
-    0% { transform: scaleX(1.0);}
-    50% { transform: scaleX(1.15);}
-    100% { transform: scaleX(1.0);}
-} */
+/* habitaciones  */
 
-/*-------------------------------------------*/
-/* Estilos de las habitaciones */
 
 .contenedor-hab {
     display: flex;
